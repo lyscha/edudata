@@ -1,44 +1,55 @@
-# 🎓 System Management Data Pokok Siswa  
-Sistem manajemen **Data Pokok Siswa (DAPOS)** yang digunakan untuk kebutuhan pendataan dan pengelolaan siswa, khususnya untuk persiapan **Ujian Akhir Semester kelas 12**.  
-Dibangun dengan stack modern yang menggabungkan kekuatan Laravel, React, dan Inertia.js untuk menghasilkan aplikasi cepat, responsif, dan mudah digunakan.
+# 📘 Sistem Manajemen Murid
+
+Aplikasi ini adalah sistem manajemen data murid dan kelas berbasis Laravel.
+Fitur yang tersedia mencakup dashboard statistik, manajemen murid, autentikasi user digunakan untuk pendataan siswa.
 
 ---
 
 ## 🚀 Tech Stack
-- **Laravel** – Backend API & server-side logic  
-- **React** – Modern UI Framework  
-- **Inertia.js** – Penghubung Laravel & React tanpa REST API  
-- **TailwindCSS** – Utility-first CSS framework  
-- **MySQL** – Database
+
+-   HTML, CSS, JavaScript
+-   PHP (Laravel)
+-   MySQL untuk database
+-   Bootstrap untuk styling
 
 ---
 
 ## 📌 Fitur Utama
-- ➕ Tambah Siswa  
-- ✏️ Edit Siswa  
-- ❌ Hapus Siswa  
-- 📤 Export Data Siswa (Excel)  
-- 📥 Import Data Siswa (Excel)  
-- 🔍 Validasi Data Siswa  
-- 🌙 Dark Mode (opsional, jika diaktifkan)
 
----
+-   Tambah Siswa
+-   Edit Siswa
+-   Hapus Siswa
+-   Export Data Siswa (Excel)
+-   Import Data Siswa (Excel)
+-   Validasi Data Siswa
+
+## 📌 Fitur Lainnya
+
+-   Menampilkan jumlah total murid
+-   Menampilkan jumlah total kelas
+-   Statistik murid berdasarkan jenis kelamin
+-   Grafik jumlah murid per kelas (Chart.js)
+-   Daftar murid terbaru dengan pagination
 
 ## 🛠 Instalasi
 
 ```bash
-git clone https://github.com/alf4ridzi/dapos
-cd dapos
+git clone https://github.com/lyscha/edudata
+cd edudata
 composer install
 npm install
+npm run build
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
-composer run dev
+php artisan db:seed
+php artisan serve
 ```
 
 ## Gallery
-![Dashboard](docs/2025-11-28_18-01.png)
+
+![Dashboard](public/BS/assets/dash.png)
 
 ## Licensi
+
 Proyek ini dirilis di bawah MIT License.
